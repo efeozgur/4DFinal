@@ -38,6 +38,8 @@ public class AnaFrame extends javax.swing.JFrame {
         jMenuItem3 = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
         jMenuItem4 = new javax.swing.JMenuItem();
+        jSeparator3 = new javax.swing.JPopupMenu.Separator();
+        mnCikis = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("4D Sürekli İşçi Maaş Programı v1.0");
@@ -96,6 +98,16 @@ public class AnaFrame extends javax.swing.JFrame {
         jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem4.setText("Sorgulama İşlemleri");
         jMenu1.add(jMenuItem4);
+        jMenu1.add(jSeparator3);
+
+        mnCikis.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
+        mnCikis.setText("Çıkış");
+        mnCikis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnCikisActionPerformed(evt);
+            }
+        });
+        jMenu1.add(mnCikis);
 
         jMenuBar1.add(jMenu1);
 
@@ -130,6 +142,10 @@ public class AnaFrame extends javax.swing.JFrame {
         masa.add(hsp);
         hsp.setVisible(true);
     }//GEN-LAST:event_mnHesaplaActionPerformed
+
+    private void mnCikisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnCikisActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_mnCikisActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,7 +189,9 @@ public class AnaFrame extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JPopupMenu.Separator jSeparator3;
     private javax.swing.JDesktopPane masa;
+    private javax.swing.JMenuItem mnCikis;
     private javax.swing.JMenuItem mnHesapla;
     private javax.swing.JMenuItem mnKisiEkle;
     // End of variables declaration//GEN-END:variables

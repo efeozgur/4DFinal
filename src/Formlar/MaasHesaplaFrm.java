@@ -51,7 +51,8 @@ public class MaasHesaplaFrm extends javax.swing.JInternalFrame {
         });
         jScrollPane1.setViewportView(kayittablo);
 
-        btnKayitGetir.setText("Çalışanları Getir");
+        btnKayitGetir.setBackground(new java.awt.Color(240, 167, 109));
+        btnKayitGetir.setText(">>>");
         btnKayitGetir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnKayitGetirActionPerformed(evt);
@@ -67,7 +68,7 @@ public class MaasHesaplaFrm extends javax.swing.JInternalFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 528, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnKayitGetir)
-                .addContainerGap(434, Short.MAX_VALUE))
+                .addContainerGap(484, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -75,8 +76,8 @@ public class MaasHesaplaFrm extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnKayitGetir, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnKayitGetir))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
