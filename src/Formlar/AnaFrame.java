@@ -31,8 +31,10 @@ public class AnaFrame extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         mnKisiEkle = new javax.swing.JMenuItem();
+        jSeparator4 = new javax.swing.JPopupMenu.Separator();
         jMenuItem1 = new javax.swing.JMenuItem();
         mnHesapla = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenuItem3 = new javax.swing.JMenuItem();
@@ -40,6 +42,9 @@ public class AnaFrame extends javax.swing.JFrame {
         jMenuItem4 = new javax.swing.JMenuItem();
         jSeparator3 = new javax.swing.JPopupMenu.Separator();
         mnCikis = new javax.swing.JMenuItem();
+        Raporlar = new javax.swing.JMenu();
+        mnMaasBordro = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("4D Sürekli İşçi Maaş Programı v1.0");
@@ -67,6 +72,7 @@ public class AnaFrame extends javax.swing.JFrame {
             }
         });
         jMenu1.add(mnKisiEkle);
+        jMenu1.add(jSeparator4);
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem1.setText("Maaş Bordrosu");
@@ -80,6 +86,10 @@ public class AnaFrame extends javax.swing.JFrame {
             }
         });
         jMenu1.add(mnHesapla);
+
+        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem5.setText("İkramiye Hesapla");
+        jMenu1.add(jMenuItem5);
 
         jMenuItem2.setText("Parametreleri Ayarla");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
@@ -110,6 +120,16 @@ public class AnaFrame extends javax.swing.JFrame {
         jMenu1.add(mnCikis);
 
         jMenuBar1.add(jMenu1);
+
+        Raporlar.setText("Raporlar");
+
+        mnMaasBordro.setText("Maaş Bordrosu");
+        Raporlar.add(mnMaasBordro);
+
+        jMenuItem6.setText("Banka Listesi");
+        Raporlar.add(jMenuItem6);
+
+        jMenuBar1.add(Raporlar);
 
         setJMenuBar(jMenuBar1);
 
@@ -181,18 +201,23 @@ public class AnaFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Raporlar;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JPopupMenu.Separator jSeparator3;
+    private javax.swing.JPopupMenu.Separator jSeparator4;
     private javax.swing.JDesktopPane masa;
     private javax.swing.JMenuItem mnCikis;
     private javax.swing.JMenuItem mnHesapla;
     private javax.swing.JMenuItem mnKisiEkle;
+    private javax.swing.JMenuItem mnMaasBordro;
     // End of variables declaration//GEN-END:variables
 }

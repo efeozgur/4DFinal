@@ -1,27 +1,33 @@
 package Kisi;
 
 import Formlar.AnaFrame;
+import Formlar.gecici;
 import java.sql.SQLException;
 import javax.swing.JFrame;
+import javax.swing.UIManager;
+import javax.swing.UIManager.LookAndFeelInfo;
 
 public class Calistir {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        AnaFrame ana = new AnaFrame(); 
+      /*  AnaFrame ana = new AnaFrame(); 
 
-//        try {
-//            for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-//                if ("Nimbus".equals(info.getName())) {
-//                    UIManager.setLookAndFeel(info.getClassName());
-//                    break;
-//                }
-//            }
-//        } catch (Exception e) {
-//             e.printStackTrace();
-//        }
+        try {
+            for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (Exception e) {
+             e.printStackTrace();
+        }
 
         ana.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        ana.setVisible(true);
+        ana.setVisible(true); */
+      
+        gecici gec = new gecici();
+        gec.setVisible(true);
 
 //        DecimalFormat dFormat = new DecimalFormat("#.##");
 //        AylikYardimlar aylik = new AylikYardimlar(2, 21);
